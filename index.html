@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <span class="material-icons light-switch">light_mode</span>
+    <main class="td-note">
+      <h1 class="td-title">Shopping list</h1>
+
+      <!-- Sorting dropdown -->
+      <div class="sort-options">
+        <label for="sort-by"></label>
+        <select id="sort-by" class="sort-by">
+          <option value="timestamp">Sort by Time</option>
+          <option value="author">Sort by Author</option>
+        </select>
+      </div>
+
+      <div class="list-wrapper">
+        <ul class="td-list"></ul>
+      </div>
+
+      <form class="add-form">
+        <input class="new-li" type="text" placeholder="Enter task" required />
+        <input class="new-author" type="text" placeholder="Author" required />
+        <input class="submit-btn" type="submit" value="+" />
+      </form>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
